@@ -10,7 +10,7 @@
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧳</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800&family=Playfair+Display:ital,wght@0,400;0,700;1,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
@@ -36,14 +36,27 @@
     }
 
     .logo {
-      font-size: 1.1rem;
-      font-weight: 700;
-      color: #111;
+      display: flex;
+      align-items: center;
+      gap: 9px;
       text-decoration: none;
-      letter-spacing: -0.02em;
     }
-
-    .logo span { color: #e63946; }
+    .logo-backpack { width: 26px; height: 31px; flex-shrink: 0; }
+    .logo-text {
+      font-family: 'Exo 2', system-ui, sans-serif;
+      font-weight: 800;
+      font-size: 1.05rem;
+      color: #0b1928;
+      letter-spacing: -0.2px;
+      line-height: 1;
+    }
+    .logo-k {
+      background: linear-gradient(90deg, #2e9ad4 0%, #5ec8f5 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .logo-dot { color: #0b1928; -webkit-text-fill-color: #0b1928; }
 
     .back-link {
       font-size: 0.85rem;
@@ -211,7 +224,16 @@
 <body>
 
   <header class="site-header">
-    <a href="../index.html" class="logo">Equipaje<span>Kaizens</span>.com</a>
+    <a href="../index.html" class="logo">
+      <svg class="logo-backpack" viewBox="0 0 34 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <path d="M14 7 Q14 4 17 4 Q20 4 20 7" stroke="#0b1928" stroke-width="2.2" stroke-linecap="round"/>
+        <path d="M10 12 Q10 7.5 17 7.5 Q24 7.5 24 12" stroke="#0b1928" stroke-width="2.2" stroke-linecap="round"/>
+        <rect x="4" y="12" width="26" height="24" rx="5" stroke="#0b1928" stroke-width="2.2"/>
+        <rect x="9" y="23" width="16" height="10" rx="3" stroke="#0b1928" stroke-width="2"/>
+        <line x1="9" y1="27.5" x2="25" y2="27.5" stroke="#0b1928" stroke-width="1.8" stroke-linecap="round"/>
+      </svg>
+      <span class="logo-text">Equipaje<span class="logo-k">Kaizens</span><span class="logo-dot">.com</span></span>
+    </a>
     <a href="../index.html" class="back-link">← Volver al inicio</a>
   </header>
 
