@@ -23,10 +23,10 @@
   <!-- Favicon -->
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧳</text></svg>" />
 
-  <!-- Google Fonts para marcas -->
+  <!-- Google Fonts para marcas y logo -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Barlow+Condensed:wght@600;700&family=Oswald:wght@500;600&family=Raleway:wght@500;600&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800&family=Playfair+Display:wght@400;600&family=Barlow+Condensed:wght@600;700&family=Oswald:wght@500;600&family=Raleway:wght@500;600&display=swap" rel="stylesheet">
 
   <!-- CSS -->
   <link rel="stylesheet" href="css/style.css" />
@@ -42,8 +42,20 @@
       <div class="header-inner">
 
         <a href="index.html" class="logo" aria-label="EquipajeKaizens - Inicio">
-          <span class="logo-icon">🧳</span>
-          Equipaje<span>Kaizens</span>
+          <!-- Icono mochila outline, igual al logo -->
+          <svg class="logo-backpack" viewBox="0 0 34 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+            <!-- Asa superior -->
+            <path d="M14 7 Q14 4 17 4 Q20 4 20 7" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <!-- Tirantes / arco superior -->
+            <path d="M10 12 Q10 7.5 17 7.5 Q24 7.5 24 12" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+            <!-- Cuerpo principal -->
+            <rect x="4" y="12" width="26" height="24" rx="5" stroke="white" stroke-width="2.2"/>
+            <!-- Bolsillo frontal -->
+            <rect x="9" y="23" width="16" height="10" rx="3" stroke="white" stroke-width="2"/>
+            <!-- Línea cremallera bolsillo -->
+            <line x1="9" y1="27.5" x2="25" y2="27.5" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+          </svg>
+          <span class="logo-text">Equipaje<span class="logo-k">Kaizens</span><span class="logo-dot">.com</span></span>
         </a>
 
         <nav aria-label="Navegación principal">
@@ -1178,8 +1190,14 @@
         <!-- Brand -->
         <div class="footer-brand">
           <a href="index.html" class="logo" aria-label="EquipajeKaizens inicio">
-            <span class="logo-icon">🧳</span>
-            Equipaje<span>Kaizens</span>
+            <svg class="logo-backpack" viewBox="0 0 34 40" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+              <path d="M14 7 Q14 4 17 4 Q20 4 20 7" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+              <path d="M10 12 Q10 7.5 17 7.5 Q24 7.5 24 12" stroke="white" stroke-width="2.2" stroke-linecap="round"/>
+              <rect x="4" y="12" width="26" height="24" rx="5" stroke="white" stroke-width="2.2"/>
+              <rect x="9" y="23" width="16" height="10" rx="3" stroke="white" stroke-width="2"/>
+              <line x1="9" y1="27.5" x2="25" y2="27.5" stroke="white" stroke-width="1.8" stroke-linecap="round"/>
+            </svg>
+            <span class="logo-text">Equipaje<span class="logo-k">Kaizens</span><span class="logo-dot">.com</span></span>
           </a>
           <p>
             Tu guía definitiva de maletas, mochilas y equipaje de viaje en español.
