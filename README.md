@@ -1,6 +1,6 @@
 # 🧳 Equipaje Kaizens - Guía Definitiva de Equipaje
 
-[🔗 Ver web en vivo](https://equipajekaizens.netlify.app/)
+[🔗 Ver web en vivo](https://kain-mark.github.io/equipaje-kaizens/)
 
 ![HTML5](https://img.shields.io/badge/html5-%23E34F26.svg?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/css3-%231572B6.svg?style=for-the-badge&logo=css3&logoColor=white)
