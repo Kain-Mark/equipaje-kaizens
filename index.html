@@ -1244,8 +1244,10 @@
     <div class="container">
       <h2 id="newsletter-title">🔔 No te pierdas ninguna oferta</h2>
       <p>Recibe en tu email las mejores ofertas en maletas y mochilas, análisis de novedades y guías exclusivas. Sin spam, solo lo bueno.</p>
-      <form class="newsletter-form" action="#" method="post" onsubmit="handleNewsletter(event)">
-        <input type="email" placeholder="tu@email.com" required aria-label="Tu dirección de email" />
+      <form class="newsletter-form" action="https://formspree.io/f/myklegak" method="POST">
+        <input type="email" name="email" placeholder="tu@email.com" required aria-label="Tu dirección de email" />
+        <input type="hidden" name="_subject" value="Nueva suscripción — EquipajeKaizens" />
+        <input type="hidden" name="_next" value="" />
         <button type="submit">Suscribirme →</button>
       </form>
     </div>
