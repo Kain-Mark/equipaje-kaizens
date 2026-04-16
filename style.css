@@ -140,6 +140,11 @@ nav a.lujo {
   font-weight: 700;
 }
 
+nav a.blog-nav {
+  color: #5ec8f5;
+  font-weight: 600;
+}
+
 /* Botón hamburguesa */
 .menu-toggle {
   display: none;
