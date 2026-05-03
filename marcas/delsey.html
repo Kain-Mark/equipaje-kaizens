@@ -36,15 +36,6 @@
     .showcase-cell:hover img { transform: scale(1.04); }
     .showcase-cell-label { position: relative; z-index: 2; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(0,0,0,0.45); background: rgba(255,255,255,0.7); padding: 5px 12px; border-radius: 20px; backdrop-filter: blur(4px); }
 
-    /* PRÓXIMAMENTE HERO */
-    .prox-hero { background: radial-gradient(ellipse 80% 120% at 50% 50%, #152b47 0%, #0b1928 55%, #091422 100%); color: white; padding: 100px 40px; text-align: center; }
-    .prox-hero .brand-eyebrow { font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; color: #5ec8f5; margin-bottom: 20px; }
-    .prox-hero h1 { font-size: 3.5rem; font-weight: 800; font-family: 'Exo 2', system-ui, sans-serif; letter-spacing: -0.03em; margin-bottom: 20px; }
-    .prox-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.65); max-width: 520px; margin: 0 auto 40px; line-height: 1.75; }
-    .prox-badge { display: inline-block; background: rgba(94,200,245,0.15); border: 1px solid rgba(94,200,245,0.35); color: #5ec8f5; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 10px 24px; border-radius: 40px; margin-bottom: 40px; }
-    .prox-notify { display: inline-flex; align-items: center; gap: 10px; background: white; color: #0b1928; font-size: 0.88rem; font-weight: 600; padding: 14px 28px; border-radius: 8px; text-decoration: none; transition: opacity 0.2s; }
-    .prox-notify:hover { opacity: 0.88; }
-
     /* BRAND INTRO */
     .brand-intro { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; padding: 52px 40px 40px; border-bottom: 1px solid #ebebeb; max-width: 1200px; margin: 0 auto; }
     .brand-intro-text h1 { font-size: 2.6rem; font-weight: 700; letter-spacing: -0.03em; color: #111; margin-bottom: 10px; }
@@ -71,15 +62,6 @@
     .btn-amazon-clean { font-size: 0.82rem; font-weight: 600; color: #111; text-decoration: none; border-bottom: 1.5px solid #111; padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
     .btn-amazon-clean:hover { color: #e63946; border-color: #e63946; }
 
-    /* PROX INFO SECTION */
-    .prox-info { max-width: 760px; margin: 0 auto; padding: 72px 40px 80px; text-align: center; }
-    .prox-info h2 { font-size: 1.6rem; font-weight: 700; color: #111; margin-bottom: 16px; }
-    .prox-info p { font-size: 0.97rem; color: #666; line-height: 1.8; margin-bottom: 24px; }
-    .prox-facts { display: flex; justify-content: center; gap: 40px; margin-top: 48px; flex-wrap: wrap; }
-    .prox-fact { text-align: center; }
-    .prox-fact strong { display: block; font-size: 2rem; font-weight: 800; font-family: 'Exo 2', system-ui, sans-serif; color: #0b1928; line-height: 1; margin-bottom: 6px; }
-    .prox-fact span { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: #aaa; }
-
     /* FOOTER */
     .page-footer { text-align: center; padding: 32px 20px; border-top: 1px solid #ebebeb; font-size: 0.78rem; color: #bbb; }
 
@@ -88,14 +70,11 @@
       .brand-intro { flex-direction: column; align-items: flex-start; padding: 36px 24px 28px; }
       .brand-since { text-align: left; }
       .products-section { padding: 36px 24px 60px; }
-      .prox-hero { padding: 60px 24px; }
-      .prox-hero h1 { font-size: 2.4rem; }
     }
     @media (max-width: 600px) {
       .site-header { padding: 16px 20px; }
       .brand-showcase { grid-template-columns: repeat(2, 1fr); height: 320px; }
       .products-grid { grid-template-columns: 1fr; }
-      .prox-facts { gap: 24px; }
     }
   </style>
 </head>
@@ -114,33 +93,38 @@
     </a>
     <a href="../index.html" class="back-link">← Todas las marcas</a>
   </header>
+
   <div class="brand-showcase">
     <a href="https://amzn.to/4sOFNyh" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="https://m.media-amazon.com/images/I/81YWms0gsgL._AC_SL1500_.jpg" alt="Delsey Chatelet Air maleta elegante" />
-      <span class="showcase-cell-label">Chatelet · Grande</span>
+      <img src="https://m.media-amazon.com/images/I/81YWms0gsgL._AC_SL1500_.jpg" alt="Delsey Chatelet Air 2.0 maleta elegante" />
+      <span class="showcase-cell-label">Chatelet Air 2.0</span>
     </a>
-    <a href="https://amzn.to/4sOFNyh" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="https://m.media-amazon.com/images/I/81YWms0gsgL._AC_SL1500_.jpg" alt="Delsey Chatelet mediana" />
-      <span class="showcase-cell-label">Chatelet · Mediana</span>
+    <a href="https://www.amazon.es/dp/B0CPDM6PWX?tag=tuequipaje09-21" target="_blank" rel="noopener nofollow" class="showcase-cell">
+      <img src="https://m.media-amazon.com/images/I/71A9F8mS-qL._AC_SL1500_.jpg" alt="Delsey Belmont Plus maleta reciclada grande" />
+      <span class="showcase-cell-label">Belmont Plus</span>
     </a>
-    <a href="https://amzn.to/4sOFNyh" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="https://m.media-amazon.com/images/I/81YWms0gsgL._AC_SL1500_.jpg" alt="Delsey Paris diseño francés" />
-      <span class="showcase-cell-label">Diseño París</span>
+    <a href="https://www.amazon.es/dp/B0CDCNFGBJ?tag=tuequipaje09-21" target="_blank" rel="noopener nofollow" class="showcase-cell">
+      <img src="https://m.media-amazon.com/images/I/51JJmBFJojL._AC_SL1500_.jpg" alt="Delsey Moncey MR maleta XL viaje largo" />
+      <span class="showcase-cell-label">Moncey MR · XL</span>
     </a>
-    <a href="https://amzn.to/4sOFNyh" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="https://m.media-amazon.com/images/I/81YWms0gsgL._AC_SL1500_.jpg" alt="Delsey detalles aluminio" />
-      <span class="showcase-cell-label">Bisagras aluminio</span>
+    <a href="https://www.amazon.es/dp/B0CDCN9175?tag=tuequipaje09-21" target="_blank" rel="noopener nofollow" class="showcase-cell">
+      <img src="https://m.media-amazon.com/images/I/61ByqAswqZL._AC_SL1500_.jpg" alt="Delsey Moncey MR cabina 55cm" />
+      <span class="showcase-cell-label">Moncey · Cabina</span>
     </a>
   </div>
+
   <div class="brand-intro">
     <div class="brand-intro-text">
       <h1>Delsey Paris</h1>
       <p>La elegancia parisina hecha maleta desde 1946. Bisagras dobles de aluminio, policarbonato ultraligero y ese flair francés inconfundible. Delsey combina artesanía europea con ingeniería moderna para crear equipaje que es tanto funcional como bello.</p>
     </div>
     <div class="brand-since"><span>Fundada en</span><strong>1946</strong></div>
-  </div>  <div class="products-section">
+  </div>
+
+  <div class="products-section">
     <h2>Selección EquipajeKaizens</h2>
     <div class="products-grid">
+
       <article class="product-card">
         <div class="product-card-img">
           <img src="https://m.media-amazon.com/images/I/81YWms0gsgL._AC_SL1500_.jpg" alt="Delsey Chatelet Air 2.0 maleta parisina elegante" loading="lazy" />
@@ -155,8 +139,55 @@
           <a href="https://amzn.to/4sOFNyh" class="btn-amazon-clean" target="_blank" rel="noopener nofollow">Ver en Amazon →</a>
         </div>
       </article>
+
+      <article class="product-card">
+        <div class="product-card-img">
+          <img src="https://m.media-amazon.com/images/I/71A9F8mS-qL._AC_SL1500_.jpg" alt="Delsey Belmont Plus maleta rígida material reciclado 80L" loading="lazy" />
+        </div>
+        <div class="product-card-body">
+          <p class="tag">Maleta grande · Material reciclado · 80 L</p>
+          <h3>Delsey Belmont Plus — Gran maleta sostenible</h3>
+          <p>80 litros fabricados con material reciclado y reciclable sin sacrificar un gramo de resistencia. Cierre TSA, ruedas 360° silenciosas y estructura rígida que aguanta todo lo que le eches. Ideal para viajes largos o familias.</p>
+        </div>
+        <div class="product-card-footer">
+          <div class="product-price"><span>desde</span>182,50 €</div>
+          <a href="https://www.amazon.es/dp/B0CPDM6PWX?tag=tuequipaje09-21" class="btn-amazon-clean" target="_blank" rel="noopener nofollow">Ver en Amazon →</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-card-img">
+          <img src="https://m.media-amazon.com/images/I/51JJmBFJojL._AC_SL1500_.jpg" alt="Delsey Moncey MR maleta XL viaje largo 76cm" loading="lazy" />
+        </div>
+        <div class="product-card-body">
+          <p class="tag">Maleta XL · Viaje largo · 76 cm</p>
+          <h3>Delsey Moncey MR XL — Para cuando necesitas llevarlo todo</h3>
+          <p>La más grande de la línea Moncey: 76 cm de alto, carcasa rígida texturizada y doble cierre con combinación. Perfecta para mudanzas temporales, viajes de más de dos semanas o cuando sencillamente no quieres dejar nada en casa.</p>
+        </div>
+        <div class="product-card-footer">
+          <div class="product-price"><span>desde</span>174,30 €</div>
+          <a href="https://www.amazon.es/dp/B0CDCNFGBJ?tag=tuequipaje09-21" class="btn-amazon-clean" target="_blank" rel="noopener nofollow">Ver en Amazon →</a>
+        </div>
+      </article>
+
+      <article class="product-card">
+        <div class="product-card-img">
+          <img src="https://m.media-amazon.com/images/I/61ByqAswqZL._AC_SL1500_.jpg" alt="Delsey Moncey MR cabina 55cm Ryanair equipaje de mano" loading="lazy" />
+        </div>
+        <div class="product-card-body">
+          <p class="tag">Equipaje de cabina · 55 cm · Ryanair</p>
+          <h3>Delsey Moncey MR Cabina — El mejor acompañante de vuelo</h3>
+          <p>55 x 35 x 25 cm: cabina válida para la mayoría de aerolíneas europeas. Misma carcasa rígida y elegancia francesa de la línea Moncey en un formato compacto. Olvídate de facturar y gana tiempo en cada viaje.</p>
+        </div>
+        <div class="product-card-footer">
+          <div class="product-price"><span>desde</span>118,98 €</div>
+          <a href="https://www.amazon.es/dp/B0CDCN9175?tag=tuequipaje09-21" class="btn-amazon-clean" target="_blank" rel="noopener nofollow">Ver en Amazon →</a>
+        </div>
+      </article>
+
     </div>
   </div>
+
   <footer class="page-footer">
     <p>© 2026 EquipajeKaizens.com · Como asociado de Amazon, obtenemos comisiones por compras que califican.</p>
   </footer>
