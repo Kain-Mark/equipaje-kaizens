@@ -204,28 +204,28 @@
       text-decoration: none;
     }
 
-    /* Lista visual */
+   /* Lista visual (Corregida) */
     .visual-list {
       list-style: none;
       margin: 24px 0;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 12px;
     }
     .visual-list li {
-      display: flex;
-      align-items: flex-start;
-      gap: 12px;
+      position: relative;
+      padding-left: 26px; /* Deja espacio para la flecha */
       font-size: 1rem;
       color: #3a4558;
       line-height: 1.6;
     }
     .visual-list li::before {
       content: "→";
+      position: absolute; /* Saca la flecha del flujo del texto */
+      left: 0;
+      top: 0;
       color: #2e9ad4;
       font-weight: 700;
-      flex-shrink: 0;
-      margin-top: 1px;
     }
 
     /* CTA final */
