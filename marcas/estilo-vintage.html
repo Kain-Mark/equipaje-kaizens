@@ -42,18 +42,23 @@
     .brand-intro-text p { font-size: 0.97rem; color: #666; max-width: 520px; line-height: 1.75; }
     .brand-since { text-align: right; flex-shrink: 0; }
     .brand-since span { display: block; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: #aaa; margin-bottom: 4px; }
-    .brand-since strong { font-size: 2rem; font-weight: 700; color: #8b4513; }
+    .brand-since strong { font-size: 1.5rem; font-weight: 700; color: #8b4513; font-family: 'Playfair Display', serif; font-style: italic; }
 
     /* PRODUCTS */
     .products-section { max-width: 1200px; margin: 0 auto; padding: 56px 40px 80px; }
     .products-section h2 { font-size: 1.1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #aaa; margin-bottom: 32px; }
-    .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
     .product-card { border: 1px solid #ebebeb; border-radius: 14px; overflow: hidden; transition: box-shadow 0.25s, transform 0.25s; }
     .product-card:hover { box-shadow: 0 10px 30px rgba(0,0,0,0.08); transform: translateY(-4px); }
-    .product-card-img { background: #f7f4f0; height: 220px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .product-card-img { background: #f7f4f0; height: 220px; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
     .product-card-img img { width: 100%; height: 100%; object-fit: contain; padding: 20px; }
+    .product-badge { position: absolute; top: 12px; left: 12px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 10px; border-radius: 20px; }
+    .badge-editor { background: #3d1f0a; color: #f5c97a; }
+    .badge-precio { background: #1a3a1a; color: #7fcc7f; }
+    .badge-premium { background: #1a1a3a; color: #a0a0ff; }
+    .badge-nuevo { background: #8b4513; color: #fff; }
     .product-card-body { padding: 22px; }
-    .product-card-body .tag { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #8b4513; margin-bottom: 8px; }
+    .product-card-body .tag { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #8b4513; margin-bottom: 6px; }
     .product-card-body h3 { font-size: 1rem; font-weight: 700; color: #111; margin-bottom: 8px; line-height: 1.35; }
     .product-card-body p { font-size: 0.88rem; color: #777; line-height: 1.65; margin-bottom: 18px; }
     .product-card-footer { display: flex; align-items: center; justify-content: space-between; padding: 0 22px 20px; }
@@ -95,21 +100,21 @@
   </header>
 
   <div class="brand-showcase">
-    <a href="https://www.amazon.es/dp/B0CFTVF2GV?tag=tuequipaje09-21" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="https://m.media-amazon.com/images/I/81vpqX23OBL._AC_SL1500_.jpg" alt="STILORD Thore mochila cuero vintage" />
-      <span class="showcase-cell-label">Cuero genuino</span>
+    <a href="https://www.amazon.es/dp/B0D5R8KH2Q?tag=tuequipaje09-21" target="_blank" rel="noopener nofollow" class="showcase-cell">
+      <img src="https://m.media-amazon.com/images/I/81wAHZN6wCL._AC_SL1500_.jpg" alt="Berliner Bags Oslo bolso cuero viaje" />
+      <span class="showcase-cell-label">Berliner Bags Oslo</span>
+    </a>
+    <a href="https://www.amazon.es/dp/B0BKQ2SSC7?tag=tuequipaje09-21" target="_blank" rel="noopener nofollow" class="showcase-cell">
+      <img src="https://m.media-amazon.com/images/I/81LNg6FtsJL._AC_SL1500_.jpg" alt="Handadsume bolsa lona cuero vintage" />
+      <span class="showcase-cell-label">Lona + Cuero</span>
+    </a>
+    <a href="https://www.amazon.es/dp/B0C6YDTKTC?tag=tuequipaje09-21" target="_blank" rel="noopener nofollow" class="showcase-cell">
+      <img src="https://m.media-amazon.com/images/I/71vk9NA0JWL._AC_SL1500_.jpg" alt="STILORD Edison mochila cuero urbana" />
+      <span class="showcase-cell-label">STILORD Edison</span>
     </a>
     <a href="https://www.amazon.es/dp/B0CFTVF2GV?tag=tuequipaje09-21" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="https://m.media-amazon.com/images/I/81vpqX23OBL._AC_SL1500_.jpg" alt="STILORD mochila negocios vintage" />
-      <span class="showcase-cell-label">Portátil 17"</span>
-    </a>
-    <a href="https://www.amazon.es/dp/B0CFTVF2GV?tag=tuequipaje09-21" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="https://m.media-amazon.com/images/I/81vpqX23OBL._AC_SL1500_.jpg" alt="STILORD cuero envejecido daypack" />
-      <span class="showcase-cell-label">Estilo atemporal</span>
-    </a>
-    <a href="https://www.amazon.es/dp/B0CFTVF2GV?tag=tuequipaje09-21" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="https://m.media-amazon.com/images/I/81vpqX23OBL._AC_SL1500_.jpg" alt="STILORD daypack cuero lujo negocios" />
-      <span class="showcase-cell-label">Artesanía alemana</span>
+      <img src="https://m.media-amazon.com/images/I/81vpqX23OBL._AC_SL1500_.jpg" alt="STILORD Thore mochila cuero vintage 17 pulgadas" />
+      <span class="showcase-cell-label">STILORD Thore</span>
     </a>
   </div>
 
@@ -125,14 +130,67 @@
     <h2>Selección EquipajeKaizens</h2>
     <div class="products-grid">
 
+      <!-- Berliner Bags Oslo -->
       <article class="product-card">
         <div class="product-card-img">
-          <img src="https://m.media-amazon.com/images/I/81vpqX23OBL._AC_SL1500_.jpg" alt="STILORD Thore mochila cuero genuino vintage 17 pulgadas negocios" loading="lazy" />
+          <img src="https://m.media-amazon.com/images/I/81wAHZN6wCL._AC_SL1500_.jpg" alt="Berliner Bags Oslo bolso cuero genuino 50L" loading="lazy" />
+          <span class="product-badge badge-editor">🏆 Elección del editor</span>
         </div>
         <div class="product-card-body">
-          <p class="tag">Cuero genuino · Portátil 17" · Lujo vintage</p>
-          <h3>STILORD 'Thore' — Cuero genuino daypack 17"</h3>
-          <p>Cuero de vaca envejecido de aspecto vintage, compartimento acolchado para portátil de 17" y múltiples bolsillos organizadores. Una mochila pensada para el profesional que quiere destacar en la sala de reuniones y en el aeropuerto sin renunciar al estilo.</p>
+          <p class="tag">Cuero genuino · Bolso de viaje · 50L</p>
+          <h3>Berliner Bags Oslo — Bolso de Piel Auténtica 50L</h3>
+          <p>Piel auténtica, 50 litros de capacidad, resistente al agua y correa ajustable. Para hombre y mujer. El compañero de viaje que no querrás cambiar nunca.</p>
+        </div>
+        <div class="product-card-footer">
+          <div class="product-price"><span>desde</span>~184,99 €</div>
+          <a href="https://www.amazon.es/dp/B0D5R8KH2Q?tag=tuequipaje09-21" class="btn-amazon-clean" target="_blank" rel="noopener nofollow">Ver en Amazon →</a>
+        </div>
+      </article>
+
+      <!-- Handadsume Lona + Cuero -->
+      <article class="product-card">
+        <div class="product-card-img">
+          <img src="https://m.media-amazon.com/images/I/81LNg6FtsJL._AC_SL1500_.jpg" alt="Handadsume bolsa lona cuero caqui vintage fin de semana" loading="lazy" />
+          <span class="product-badge badge-precio">💰 Mejor precio</span>
+        </div>
+        <div class="product-card-body">
+          <p class="tag">Lona + cuero · Fin de semana · Unisex</p>
+          <h3>Handadsume — Bolsa de Viaje Lona + Cuero</h3>
+          <p>Lona impermeable con refuerzos de cuero, tono caqui vintage, gran capacidad para escapadas cortas. La opción más accesible sin renunciar al estilo.</p>
+        </div>
+        <div class="product-card-footer">
+          <div class="product-price"><span>desde</span>~55,00 €</div>
+          <a href="https://www.amazon.es/dp/B0BKQ2SSC7?tag=tuequipaje09-21" class="btn-amazon-clean" target="_blank" rel="noopener nofollow">Ver en Amazon →</a>
+        </div>
+      </article>
+
+      <!-- STILORD Edison -->
+      <article class="product-card">
+        <div class="product-card-img">
+          <img src="https://m.media-amazon.com/images/I/71vk9NA0JWL._AC_SL1500_.jpg" alt="STILORD Edison mochila cuero genuino urbana 13.5 pulgadas" loading="lazy" />
+          <span class="product-badge badge-premium">⭐ Premium</span>
+        </div>
+        <div class="product-card-body">
+          <p class="tag">Cuero genuino · Portátil 13,5" · Urbana</p>
+          <h3>STILORD Edison — Mochila de Cuero Genuino Urbana</h3>
+          <p>Cuero genuino de primera calidad, antirrobo, resistente al agua, compartimento acolchado para portátil hasta 13,5". La mochila que compras una vez y guardas para siempre.</p>
+        </div>
+        <div class="product-card-footer">
+          <div class="product-price"><span>desde</span>~179,90 €</div>
+          <a href="https://www.amazon.es/dp/B0C6YDTKTC?tag=tuequipaje09-21" class="btn-amazon-clean" target="_blank" rel="noopener nofollow">Ver en Amazon →</a>
+        </div>
+      </article>
+
+      <!-- STILORD Thore -->
+      <article class="product-card">
+        <div class="product-card-img">
+          <img src="https://m.media-amazon.com/images/I/81vpqX23OBL._AC_SL1500_.jpg" alt="STILORD Thore mochila cuero vintage daypack 17 pulgadas negocios" loading="lazy" />
+          <span class="product-badge badge-nuevo">🍂 Nuevo</span>
+        </div>
+        <div class="product-card-body">
+          <p class="tag">Cuero genuino · Portátil 17" · Negocios</p>
+          <h3>STILORD 'Thore' — Daypack Cuero Vintage 17"</h3>
+          <p>Cuero de vaca envejecido de aspecto vintage, compartimento acolchado para portátil de 17" y múltiples bolsillos organizadores. Para quienes quieren destacar en la oficina y en el aeropuerto sin renunciar al estilo.</p>
         </div>
         <div class="product-card-footer">
           <div class="product-price"><span>desde</span>199,90 €</div>
