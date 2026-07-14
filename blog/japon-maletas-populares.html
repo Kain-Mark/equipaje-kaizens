@@ -233,7 +233,7 @@
       margin: 24px 0;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 14px;
     }
     .visual-list li {
       display: flex;
@@ -241,14 +241,16 @@
       gap: 12px;
       font-size: 1rem;
       color: #3a4558;
-      line-height: 1.6;
+      line-height: 1.7;
     }
-    .visual-list li::before {
-      content: "→";
+    .visual-list .list-arrow {
       color: #c0392b;
       font-weight: 700;
       flex-shrink: 0;
-      margin-top: 1px;
+      line-height: 1.7;
+    }
+    .visual-list .list-text {
+      flex: 1;
     }
 
     /* Separador temático */
@@ -391,10 +393,10 @@
     <p>No es casualidad que las tendencias de equipaje nazcan en Japón. Hay razones culturales y prácticas muy concretas que explican por qué los japoneses son tan exigentes con lo que llevan a la espalda:</p>
 
     <ul class="visual-list">
-      <li><strong>El transporte público manda.</strong> En Tokio, el metro va lleno. Una mochila que ocupa demasiado o que dificulta el acceso rápido a tus cosas es una mochila mal diseñada. Los japoneses lo saben y diseñan en consecuencia.</li>
-      <li><strong>La cultura del cuidado.</strong> En Japón, los objetos se cuidan para que duren décadas. El equipaje se elige con la mentalidad de que va a acompañarte muchos años — no como algo desechable.</li>
-      <li><strong>Funcionalidad sin sacrificar la estética.</strong> El diseño japonés nunca renuncia a ninguna de las dos. Una mochila japonesa tiene que funcionar perfectamente Y verse bien. No es negociable.</li>
-      <li><strong>Minimalismo inteligente.</strong> Los espacios japoneses son pequeños. El equipaje refleja esa filosofía: cada centímetro tiene que servir para algo concreto.</li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>El transporte público manda.</strong> En Tokio, el metro va lleno. Una mochila que ocupa demasiado o que dificulta el acceso rápido a tus cosas es una mochila mal diseñada. Los japoneses lo saben y diseñan en consecuencia.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>La cultura del cuidado.</strong> En Japón, los objetos se cuidan para que duren décadas. El equipaje se elige con la mentalidad de que va a acompañarte muchos años — no como algo desechable.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Funcionalidad sin sacrificar la estética.</strong> El diseño japonés nunca renuncia a ninguna de las dos. Una mochila japonesa tiene que funcionar perfectamente Y verse bien. No es negociable.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Minimalismo inteligente.</strong> Los espacios japoneses son pequeños. El equipaje refleja esa filosofía: cada centímetro tiene que servir para algo concreto.</span></li>
     </ul>
 
     <h2>Maletas: el estilo japonés también en ruedas</h2>
