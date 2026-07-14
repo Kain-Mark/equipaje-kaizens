@@ -218,7 +218,7 @@
       margin: 24px 0;
       display: flex;
       flex-direction: column;
-      gap: 10px;
+      gap: 14px;
     }
     .visual-list li {
       display: flex;
@@ -226,15 +226,10 @@
       gap: 12px;
       font-size: 1rem;
       color: #3a4558;
-      line-height: 1.6;
+      line-height: 1.7;
     }
-    .visual-list li::before {
-      content: "→";
-      color: #2e9ad4;
-      font-weight: 700;
-      flex-shrink: 0;
-      margin-top: 1px;
-    }
+    .visual-list .list-arrow { color: #2e9ad4; font-weight: 700; flex-shrink: 0; line-height: 1.7; }
+    .visual-list .list-text { flex: 1; }
 
     /* CTA final */
     .article-cta {
@@ -330,11 +325,11 @@
     <p>Mucho más de lo que crees. La clave está en la mentalidad Kaizen aplicada al equipaje: no se trata de llevar lo mínimo por llevar lo mínimo, sino de llevar exactamente lo que necesitas — nada más, nada menos.</p>
 
     <ul class="visual-list">
-      <li><strong>Ropa:</strong> 3 camisetas técnicas de secado rápido, 2 pantalones ligeros (uno largo para templos), ropa interior de viaje, un forro polar fino y un chubasquero compacto para el monzón.</li>
-      <li><strong>Higiene:</strong> Productos sólidos (champú, jabón, protector solar) — ocupan la mitad y no hay problema en el control de seguridad.</li>
-      <li><strong>Tecnología:</strong> Portátil ultraligero o tablet, cargador universal, batería externa de 20.000 mAh — imprescindible porque los enchufes escasean.</li>
-      <li><strong>Botiquín:</strong> Ibuprofeno, sales de rehidratación, pastillas potabilizadoras y un antibiótico de amplio espectro por si acaso. El calor y el agua hacen lo suyo.</li>
-      <li><strong>Documentación:</strong> Fotocopia del pasaporte plastificada, dinero en efectivo en rupias y una tarjeta sin comisiones en el extranjero.</li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Ropa:</strong> 3 camisetas técnicas de secado rápido, 2 pantalones ligeros (uno largo para templos), ropa interior de viaje, un forro polar fino y un chubasquero compacto para el monzón.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Higiene:</strong> Productos sólidos (champú, jabón, protector solar) — ocupan la mitad y no hay problema en el control de seguridad.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Tecnología:</strong> Portátil ultraligero o tablet, cargador universal, batería externa de 20.000 mAh — imprescindible porque los enchufes escasean.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Botiquín:</strong> Ibuprofeno, sales de rehidratación, pastillas potabilizadoras y un antibiótico de amplio espectro por si acaso. El calor y el agua hacen lo suyo.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Documentación:</strong> Fotocopia del pasaporte plastificada, dinero en efectivo en rupias y una tarjeta sin comisiones en el extranjero.</span></li>
     </ul>
 
     <p>El secreto final: lleva la mochila al 80% de su capacidad. Ese 20% vacío es para las compras inevitables — una tela en Jaipur, una figura de Ganesh en Varanasi, un chai en termos de barro que no puedes dejar atrás.</p>

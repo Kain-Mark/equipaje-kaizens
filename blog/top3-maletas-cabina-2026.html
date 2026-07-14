@@ -80,9 +80,10 @@
     .rank-2 { background: #f0f0f0; border: 1px solid #aaa; color: #555; }
     .rank-3 { background: #fdf0e8; border: 1px solid #cd7f32; color: #7a4a10; }
 
-    .visual-list { list-style: none; margin: 24px 0; display: flex; flex-direction: column; gap: 10px; }
-    .visual-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 1rem; color: #3a4558; line-height: 1.6; }
-    .visual-list li::before { content: "→"; color: #2e9ad4; font-weight: 700; flex-shrink: 0; margin-top: 1px; }
+    .visual-list { list-style: none; margin: 24px 0; display: flex; flex-direction: column; gap: 14px; }
+    .visual-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 1rem; color: #3a4558; line-height: 1.7; }
+    .visual-list .list-arrow { color: #2e9ad4; font-weight: 700; flex-shrink: 0; line-height: 1.7; }
+    .visual-list .list-text { flex: 1; }
 
     .article-cta { background: radial-gradient(ellipse at center, #1a2a4a, #060d18); border-radius: 16px; padding: 48px 40px; text-align: center; margin-top: 60px; }
     .article-cta h3 { font-family: 'Playfair Display', Georgia, serif; font-size: 1.6rem; color: #fff; margin-bottom: 14px; }
@@ -189,10 +190,10 @@
     <h2>¿Cuál elegir?</h2>
 
     <ul class="visual-list">
-      <li><strong>Presupuesto ajustado (menos de 100 €):</strong> American Tourister Soundbox. Sin dudas.</li>
-      <li><strong>Viajero frecuente (más de 10 viajes al año):</strong> Samsonite S'Cure. La resistencia justifica el precio.</li>
-      <li><strong>Viajes de trabajo o presentaciones:</strong> Delsey Moncey MR. La primera impresión importa.</li>
-      <li><strong>Ryanair / Wizz Air:</strong> Verifica medidas antes de comprar — estas tres cumplen las medidas estándar de la mayoría de aerolíneas europeas.</li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Presupuesto ajustado (menos de 100 €):</strong> American Tourister Soundbox. Sin dudas.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Viajero frecuente (más de 10 viajes al año):</strong> Samsonite S'Cure. La resistencia justifica el precio.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Viajes de trabajo o presentaciones:</strong> Delsey Moncey MR. La primera impresión importa.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Ryanair / Wizz Air:</strong> Verifica medidas antes de comprar — estas tres cumplen las medidas estándar de la mayoría de aerolíneas europeas.</span></li>
     </ul>
 
     <div class="article-cta">

@@ -69,10 +69,10 @@
     .rank-3 { background: #fef0e8; color: #a0522d; border: 1px solid #e8c4a0; }
 
     /* VISUAL LIST */
-    .visual-list { list-style: none; margin: 20px 0 28px; padding: 0; }
-    .visual-list li { padding: 10px 0 10px 28px; position: relative; font-size: 0.95rem; color: #444; border-bottom: 1px solid #f0f0f0; line-height: 1.6; }
-    .visual-list li:last-child { border-bottom: none; }
-    .visual-list li::before { content: "→"; position: absolute; left: 0; color: #2d7a2d; font-weight: 700; }
+    .visual-list { list-style: none; margin: 24px 0; display: flex; flex-direction: column; gap: 14px; }
+    .visual-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 1rem; color: #3a4558; line-height: 1.7; }
+    .visual-list .list-arrow { color: #2d7a2d; font-weight: 700; flex-shrink: 0; line-height: 1.7; }
+    .visual-list .list-text { flex: 1; }
 
     /* ARTICLE CTA */
     .article-cta { background: radial-gradient(ellipse 80% 120% at 50% 50%, #1a3a1a 0%, #0d2010 55%, #070f07 100%); border-radius: 16px; padding: 48px 40px; text-align: center; margin: 60px 0 0; color: white; }
@@ -174,19 +174,19 @@
     <h2>¿Cómo elegir entre las tres?</h2>
     <p>Cada mochila tiene un perfil diferente según el tipo de salida que hagas:</p>
     <ul class="visual-list">
-      <li><strong>The North Face Borealis</strong> es perfecta si buscas versatilidad: sirve para rutas de un día, viajes urbanos y escapadas de fin de semana. Su precio es el más competitivo y tiene decenas de miles de valoraciones positivas.</li>
-      <li><strong>Deuter Trail 25</strong> brilla en rutas de montaña exigentes donde el calor de la espalda y la distribución del peso son clave. El sistema Aircomfort es imbatible en días calurosos.</li>
-      <li><strong>Osprey Renn</strong> está diseñada para mujeres que hacen rutas de varios días o necesitan mayor capacidad. Si te molesta que las correas estándar no se ajustan bien a tu cuerpo, esta es tu mochila.</li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>The North Face Borealis</strong> es perfecta si buscas versatilidad: sirve para rutas de un día, viajes urbanos y escapadas de fin de semana. Su precio es el más competitivo y tiene decenas de miles de valoraciones positivas.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Deuter Trail 25</strong> brilla en rutas de montaña exigentes donde el calor de la espalda y la distribución del peso son clave. El sistema Aircomfort es imbatible en días calurosos.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Osprey Renn</strong> está diseñada para mujeres que hacen rutas de varios días o necesitan mayor capacidad. Si te molesta que las correas estándar no se ajustan bien a tu cuerpo, esta es tu mochila.</span></li>
     </ul>
 
     <h2>Lo que tienen en común las tres</h2>
     <p>A pesar de sus diferencias, las tres ganadoras comparten características que consideramos imprescindibles para el senderismo moderno:</p>
     <ul class="visual-list">
-      <li>Materiales resistentes al desgaste y con cierta repelencia al agua incluida de serie</li>
-      <li>Sistemas de sujeción en cintura y pecho para estabilizar la carga en terreno irregular</li>
-      <li>Bolsillo compatible con depósito de hidratación (muy útil en verano)</li>
-      <li>Marcas con garantía y servicio postventa establecido en España</li>
-      <li>Miles de valoraciones positivas de compradores reales en Amazon España</li>
+      <li><span class="list-arrow">→</span><span class="list-text">Materiales resistentes al desgaste y con cierta repelencia al agua incluida de serie</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text">Sistemas de sujeción en cintura y pecho para estabilizar la carga en terreno irregular</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text">Bolsillo compatible con depósito de hidratación (muy útil en verano)</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text">Marcas con garantía y servicio postventa establecido en España</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text">Miles de valoraciones positivas de compradores reales en Amazon España</span></li>
     </ul>
 
     <h2>Preguntas frecuentes antes de comprar</h2>

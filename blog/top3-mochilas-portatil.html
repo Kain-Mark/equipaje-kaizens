@@ -69,10 +69,10 @@
     .rank-3 { background: #fef0e8; color: #a0522d; border: 1px solid #e8c4a0; }
 
     /* VISUAL LIST */
-    .visual-list { list-style: none; margin: 20px 0 28px; padding: 0; }
-    .visual-list li { padding: 10px 0 10px 28px; position: relative; font-size: 0.95rem; color: #444; border-bottom: 1px solid #f0f0f0; line-height: 1.6; }
-    .visual-list li:last-child { border-bottom: none; }
-    .visual-list li::before { content: "→"; position: absolute; left: 0; color: #4a4aad; font-weight: 700; }
+    .visual-list { list-style: none; margin: 24px 0; display: flex; flex-direction: column; gap: 14px; }
+    .visual-list li { display: flex; align-items: flex-start; gap: 12px; font-size: 1rem; color: #3a4558; line-height: 1.7; }
+    .visual-list .list-arrow { color: #4a4aad; font-weight: 700; flex-shrink: 0; line-height: 1.7; }
+    .visual-list .list-text { flex: 1; }
 
     /* COMPARISON TABLE */
     .compare-table { width: 100%; border-collapse: collapse; margin: 28px 0; font-size: 0.88rem; }
@@ -217,17 +217,17 @@
 
     <h2>¿Cuál te conviene según tu uso?</h2>
     <ul class="visual-list">
-      <li><strong>Eres estudiante y usas el transporte público:</strong> la MATEIN es tu mejor opción. El bolsillo trasero antirrobo y el puerto USB para cargar el móvil en movimiento marcan la diferencia en el día a día.</li>
-      <li><strong>Viajas seguido por trabajo:</strong> invierte en la Samsonite GUARDIT 3.0. La diferencia de calidad y protección se nota, y la marca tiene servicio técnico en España.</li>
-      <li><strong>Solo necesitas algo funcional y barato:</strong> la Lenovo B210 hace lo esencial y no te romperá el bolsillo. Perfecta si tu portátil ya tiene funda protectora.</li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Eres estudiante y usas el transporte público:</strong> la MATEIN es tu mejor opción. El bolsillo trasero antirrobo y el puerto USB para cargar el móvil en movimiento marcan la diferencia en el día a día.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Viajas seguido por trabajo:</strong> invierte en la Samsonite GUARDIT 3.0. La diferencia de calidad y protección se nota, y la marca tiene servicio técnico en España.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Solo necesitas algo funcional y barato:</strong> la Lenovo B210 hace lo esencial y no te romperá el bolsillo. Perfecta si tu portátil ya tiene funda protectora.</span></li>
     </ul>
 
     <h2>Lo que nunca debes ignorar al comprar</h2>
     <p>Más allá de las reseñas y el precio, hay tres cosas que la mayoría de compradores ignoran y luego lamentan:</p>
     <ul class="visual-list">
-      <li><strong>Compatibilidad de tamaño:</strong> comprueba que el compartimento admite el tamaño exacto de tu portátil. Un portátil de 15,6" puede no caber en un bolsillo diseñado para 15".</li>
-      <li><strong>Peso vacío:</strong> las mochilas con muchos compartimentos y materiales reforzados pesan más vacías. Si ya llevas mucho peso dentro, cuenta también el de la mochila.</li>
-      <li><strong>Acceso en movimiento:</strong> los bolsillos laterales y el acceso superior a los objetos más usados (llaves, auriculares, tarjetas) marcan la diferencia en el uso diario.</li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Compatibilidad de tamaño:</strong> comprueba que el compartimento admite el tamaño exacto de tu portátil. Un portátil de 15,6" puede no caber en un bolsillo diseñado para 15".</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Peso vacío:</strong> las mochilas con muchos compartimentos y materiales reforzados pesan más vacías. Si ya llevas mucho peso dentro, cuenta también el de la mochila.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>Acceso en movimiento:</strong> los bolsillos laterales y el acceso superior a los objetos más usados (llaves, auriculares, tarjetas) marcan la diferencia en el uso diario.</span></li>
     </ul>
 
     <div class="article-cta">

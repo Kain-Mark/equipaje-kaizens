@@ -212,29 +212,24 @@
       text-decoration: none;
     }
 
-   /* Lista visual (Corregida) */
+   /* Lista visual */
     .visual-list {
       list-style: none;
       margin: 24px 0;
       display: flex;
       flex-direction: column;
-      gap: 12px;
+      gap: 14px;
     }
     .visual-list li {
-      position: relative;
-      padding-left: 26px; /* Deja espacio para la flecha */
+      display: flex;
+      align-items: flex-start;
+      gap: 12px;
       font-size: 1rem;
       color: #3a4558;
-      line-height: 1.6;
+      line-height: 1.7;
     }
-    .visual-list li::before {
-      content: "→";
-      position: absolute; /* Saca la flecha del flujo del texto */
-      left: 0;
-      top: 0;
-      color: #2e9ad4;
-      font-weight: 700;
-    }
+    .visual-list .list-arrow { color: #2e9ad4; font-weight: 700; flex-shrink: 0; line-height: 1.7; }
+    .visual-list .list-text { flex: 1; }
 
     /* CTA final */
     .article-cta {
@@ -320,8 +315,8 @@
     <p>El error más común que cometemos al viajar o desplazarnos es sobrecargar nuestro equipaje sin tener en cuenta nuestro propio chasis. Fisioterapeutas y organismos de salud a nivel internacional advierten de un límite claro: <strong>el peso de tu mochila nunca debe superar el 10% - 15% de tu peso corporal</strong>.</p>
 
     <ul class="visual-list">
-      <li><strong>La ciencia detrás:</strong> Si pesas 75 kg, tu límite saludable de carga está en torno a los 7,5 u 11 kg. Al superar este límite de forma habitual, el cuerpo humano se ve obligado a inclinarse hacia adelante para compensar la pérdida del centro de gravedad. Esta postura antinatural comprime los discos vertebrales y genera una tensión brutal en las cervicales.</li>
-      <li><strong>El consejo Kaizen:</strong> Antes de comprar, fíjate siempre en el peso en vacío de la mochila (la tara). Una mochila ultraligera de materiales técnicos te regala esos kilos extra de margen para tu equipaje real.</li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>La ciencia detrás:</strong> Si pesas 75 kg, tu límite saludable de carga está en torno a los 7,5 u 11 kg. Al superar este límite de forma habitual, el cuerpo humano se ve obligado a inclinarse hacia adelante para compensar la pérdida del centro de gravedad. Esta postura antinatural comprime los discos vertebrales y genera una tensión brutal en las cervicales.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>El consejo Kaizen:</strong> Antes de comprar, fíjate siempre en el peso en vacío de la mochila (la tara). Una mochila ultraligera de materiales técnicos te regala esos kilos extra de margen para tu equipaje real.</span></li>
     </ul>
 
     <h2>2. El síndrome del hombro solitario: Simetría obligatoria</h2>
@@ -329,8 +324,8 @@
     <p>Llevar la mochila colgada de una sola asa puede parecer un gesto desenfadado, rápido o simplemente cómodo por inercia, pero biomecánicamente hablando, es un desastre que te pasará factura.</p>
 
     <ul class="visual-list">
-      <li><strong>La ciencia detrás:</strong> Los estudios de ergonomía en movimiento demuestran que cargar el peso de forma asimétrica obliga a la columna vertebral a curvarse en forma de "C", creando una escoliosis temporal. Para evitar que la mochila se deslice, el hombro contrario se eleva involuntariamente debido a la contracción muscular constante y agotadora.</li>
-      <li><strong>El consejo Kaizen:</strong> Utiliza siempre ambas asas. Asegúrate de elegir mochilas con correas anchas (mínimo de 5 centímetros) y acolchadas con espuma EVA para que el peso se distribuya uniformemente sobre las clavículas sin llegar a cortar la circulación sanguínea.</li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>La ciencia detrás:</strong> Los estudios de ergonomía en movimiento demuestran que cargar el peso de forma asimétrica obliga a la columna vertebral a curvarse en forma de "C", creando una escoliosis temporal. Para evitar que la mochila se deslice, el hombro contrario se eleva involuntariamente debido a la contracción muscular constante y agotadora.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>El consejo Kaizen:</strong> Utiliza siempre ambas asas. Asegúrate de elegir mochilas con correas anchas (mínimo de 5 centímetros) y acolchadas con espuma EVA para que el peso se distribuya uniformemente sobre las clavículas sin llegar a cortar la circulación sanguínea.</span></li>
     </ul>
 
     <p>Si buscas una opción para tu día a día que cumpla con los estándares de simetría y cuide tus hombros sin perder el estilo icónico, esta es siempre nuestra primera recomendación:</p>
@@ -350,8 +345,8 @@
     <p>Si alguna vez te has preguntado por qué las mochilas de alta montaña o de viaje prolongado incorporan un cinturón tan ancho en la base, la respuesta es pura física de distribución de cargas gravitacionales.</p>
 
     <ul class="visual-list">
-      <li><strong>La ciencia detrás:</strong> Un cinturón lumbar bien diseñado y ajustado correctamente sobre las crestas ilíacas (los huesos de la cadera) <strong>transfiere entre el 70% y el 80% del peso</strong> de la mochila directamente al tren inferior. Las piernas contienen los músculos más grandes y resistentes del cuerpo, perfectamente preparados para soportar cargas sostenidas.</li>
-      <li><strong>El consejo Kaizen:</strong> Entiende que los hombros solo deben servir para estabilizar la carga contra tu espalda, no para soportarla. Si vas a caminar más de una hora seguida o tu mochila supera los 30 litros de capacidad, el cinturón lumbar acolchado es una característica innegociable.</li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>La ciencia detrás:</strong> Un cinturón lumbar bien diseñado y ajustado correctamente sobre las crestas ilíacas (los huesos de la cadera) <strong>transfiere entre el 70% y el 80% del peso</strong> de la mochila directamente al tren inferior. Las piernas contienen los músculos más grandes y resistentes del cuerpo, perfectamente preparados para soportar cargas sostenidas.</span></li>
+      <li><span class="list-arrow">→</span><span class="list-text"><strong>El consejo Kaizen:</strong> Entiende que los hombros solo deben servir para estabilizar la carga contra tu espalda, no para soportarla. Si vas a caminar más de una hora seguida o tu mochila supera los 30 litros de capacidad, el cinturón lumbar acolchado es una característica innegociable.</span></li>
     </ul>
 
     <a href="https://amzn.to/4mk5vbK" class="product-inline" target="_blank" rel="noopener nofollow">
