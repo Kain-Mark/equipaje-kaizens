@@ -22,6 +22,7 @@
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Inter', system-ui, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.6; }
 
+    /* HEADER */
     .site-header { display: flex; align-items: center; justify-content: space-between; padding: 18px 40px; border-bottom: 1px solid #ebebeb; position: sticky; top: 0; background: rgba(255,255,255,0.97); backdrop-filter: blur(8px); z-index: 100; }
     .logo { display: flex; align-items: center; gap: 9px; text-decoration: none; }
     .logo-backpack { width: 26px; height: 31px; flex-shrink: 0; }
@@ -31,32 +32,39 @@
     .back-link { font-size: 0.85rem; color: #888; text-decoration: none; transition: color 0.2s; }
     .back-link:hover { color: #111; }
 
-    .brand-showcase { display: grid; grid-template-columns: repeat(4, 1fr); height: 380px; }
-    .showcase-cell { position: relative; overflow: hidden; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 28px; text-decoration: none; transition: filter 0.3s; }
-    .showcase-cell:hover { filter: brightness(0.93); }
-    .showcase-cell:nth-child(1) { background: #f5e8e8; }
-    .showcase-cell:nth-child(2) { background: #ede8f0; }
-    .showcase-cell:nth-child(3) { background: #e8eff5; }
-    .showcase-cell:nth-child(4) { background: #f0f5e8; }
-    .showcase-cell img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 20px; transition: transform 0.4s ease; }
-    .showcase-cell:hover img { transform: scale(1.05); }
-    .showcase-cell-label { position: relative; z-index: 2; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(0,0,0,0.5); background: rgba(255,255,255,0.75); padding: 5px 12px; border-radius: 20px; backdrop-filter: blur(4px); }
+    /* BRAND HERO */
+    .brand-hero { background: linear-gradient(135deg, #8B0000 0%, #6B0000 50%, #3d0000 100%); padding: 70px 40px 60px; text-align: center; color: #fff; }
+    .brand-eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 16px; }
+    .brand-hero h1 { font-family: 'Exo 2', system-ui, sans-serif; font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 16px; }
+    .brand-hero p { font-size: 1rem; color: rgba(255,255,255,0.7); max-width: 520px; margin: 0 auto 40px; line-height: 1.8; }
+    .brand-stats { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+    .brand-stat strong { display: block; font-size: 2.2rem; font-weight: 800; font-family: 'Exo 2', system-ui, sans-serif; line-height: 1; margin-bottom: 4px; }
+    .brand-stat span { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); }
 
-    .brand-hero { background: linear-gradient(135deg, #8B0000 0%, #6B0000 50%, #3d0000 100%); padding: 64px 40px 56px; text-align: center; color: #fff; }
-    .brand-eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.4); margin-bottom: 16px; }
-    .brand-hero h1 { font-family: 'Exo 2', system-ui, sans-serif; font-size: clamp(1.8rem, 4vw, 3rem); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 16px; }
-    .brand-hero p { font-size: 1rem; color: rgba(255,255,255,0.65); max-width: 520px; margin: 0 auto 40px; line-height: 1.8; }
-    .brand-stats { display: flex; justify-content: center; gap: 52px; flex-wrap: wrap; }
-    .brand-stat strong { display: block; font-size: 2rem; font-weight: 800; font-family: 'Exo 2', system-ui, sans-serif; line-height: 1; margin-bottom: 4px; }
-    .brand-stat span { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.4); }
+    /* CATEGORIES / LÍNEAS */
+    .categories-section { max-width: 1100px; margin: 0 auto; padding: 56px 40px 24px; }
+    .categories-section h2 { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #bbb; margin-bottom: 24px; }
+    .categories-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .category-card { display: flex; flex-direction: column; align-items: center; text-decoration: none; border: 1px solid #ebebeb; border-radius: 14px; overflow: hidden; transition: box-shadow 0.25s, transform 0.25s; }
+    .category-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); transform: translateY(-3px); }
+    .category-card-img { width: 100%; height: 180px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .category-card-img img { width: 100%; height: 100%; object-fit: contain; padding: 16px; transition: transform 0.3s; }
+    .category-card:hover .category-card-img img { transform: scale(1.05); }
+    .category-card-img.unica   { background: #f5e8e8; }
+    .category-card-img.rlite   { background: #ede8f0; }
+    .category-card-img.light   { background: #e8eff5; }
+    .category-card-img.joy     { background: #f0f5e8; }
+    .category-card-label { padding: 14px 16px; font-size: 0.88rem; font-weight: 600; color: #111; width: 100%; text-align: center; border-top: 1px solid #f0f0f0; }
 
-    .brand-story { max-width: 860px; margin: 0 auto; padding: 56px 40px 52px; border-bottom: 1px solid #f0f0f0; }
-    .brand-story h2 { font-size: 1.45rem; font-weight: 700; color: #111; margin-bottom: 18px; letter-spacing: -0.02em; }
+    /* BRAND STORY */
+    .brand-story { max-width: 860px; margin: 0 auto; padding: 52px 40px 48px; border-bottom: 1px solid #f0f0f0; }
+    .brand-story h2 { font-size: 1.5rem; font-weight: 700; color: #111; margin-bottom: 18px; letter-spacing: -0.02em; }
     .brand-story p { font-size: 0.97rem; color: #555; line-height: 1.85; margin-bottom: 18px; }
     .brand-story p:last-child { margin-bottom: 0; }
     .brand-story strong { color: #111; }
 
-    .products-section { max-width: 1200px; margin: 0 auto; padding: 52px 40px 80px; }
+    /* PRODUCTS SECTION */
+    .products-section { max-width: 1100px; margin: 0 auto; padding: 52px 40px 80px; }
     .products-section h2 { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #bbb; margin-bottom: 28px; }
     .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
     .product-card { border: 1px solid #ebebeb; border-radius: 14px; overflow: hidden; transition: box-shadow 0.25s, transform 0.25s; display: flex; flex-direction: column; }
@@ -69,28 +77,26 @@
     .bg-4 { background: #f0f5e8; }
     .product-badge { position: absolute; top: 12px; left: 12px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 10px; border-radius: 20px; background: #8B0000; color: #fff; }
     .product-card-body { padding: 20px 22px 12px; flex: 1; }
-    .product-tag { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #4a5568; display: block; margin-bottom: 6px; }
+    .product-tag { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #8B0000; display: block; margin-bottom: 6px; }
     .product-card-body h3 { font-size: 0.97rem; font-weight: 700; color: #111; margin-bottom: 8px; line-height: 1.35; }
     .product-card-body p { font-size: 0.85rem; color: #777; line-height: 1.65; }
-    .product-card-footer { padding: 12px 22px 18px; border-top: 1px solid #f0f0f0; display: flex; align-items: center; justify-content: space-between; gap: 10px; }
-    .product-price { font-size: 1.05rem; font-weight: 700; color: #111; white-space: nowrap; }
-    .product-price span { font-size: 0.72rem; font-weight: 400; color: #aaa; margin-right: 2px; }
-    .btn-amazon { display: inline-block; background: #ff9900; color: #111; font-size: 0.8rem; font-weight: 700; padding: 8px 14px; border-radius: 8px; text-decoration: none; white-space: nowrap; transition: background 0.2s; }
+    .product-card-footer { padding: 14px 22px 18px; border-top: 1px solid #f0f0f0; margin-top: auto; }
+    .btn-amazon { display: inline-block; background: #ff9900; color: #111; font-size: 0.82rem; font-weight: 700; padding: 10px 18px; border-radius: 8px; text-decoration: none; width: 100%; text-align: center; transition: background 0.2s; }
     .btn-amazon:hover { background: #e68a00; }
 
+    /* FOOTER */
     .page-footer { text-align: center; padding: 32px 20px; border-top: 1px solid #ebebeb; font-size: 0.78rem; color: #bbb; }
     .page-footer a { color: #bbb; text-decoration: none; }
 
     @media (max-width: 900px) {
-      .brand-showcase { height: 280px; }
-      .brand-hero { padding: 48px 24px 44px; }
-      .brand-story, .products-section { padding-left: 24px; padding-right: 24px; }
-      .brand-stats { gap: 32px; }
+      .categories-grid { grid-template-columns: repeat(2, 1fr); }
+      .brand-hero { padding: 50px 24px 44px; }
+      .categories-section, .products-section, .brand-story { padding-left: 24px; padding-right: 24px; }
     }
     @media (max-width: 600px) {
       .site-header { padding: 16px 20px; }
-      .brand-showcase { grid-template-columns: repeat(2, 1fr); height: 340px; }
-      .brand-stat strong { font-size: 1.7rem; }
+      .brand-stats { gap: 28px; }
+      .brand-stat strong { font-size: 1.8rem; }
     }
   </style>
 </head>
@@ -111,29 +117,9 @@
     <a href="../index.html" class="back-link">← Todas las marcas</a>
   </header>
 
-  <!-- SHOWCASE -->
-  <div class="brand-showcase">
-    <a href="https://amzn.to/4dvEQq4" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="../img/marcas/618Hvik8anL._AC_SL1500_.jpg" alt="Roncato Unica maleta italiana rígida" loading="lazy" />
-      <span class="showcase-cell-label">Unica · Grande</span>
-    </a>
-    <a href="https://www.amazon.es/dp/B0B7RY1G3W?tag=tuequipaje09-21" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="../img/marcas/5184IXPAQ0L._AC_SX569_.jpg" alt="Roncato R-Lite cabina ultraligera" loading="lazy" />
-      <span class="showcase-cell-label">R-Lite · Cabina</span>
-    </a>
-    <a href="https://www.amazon.es/dp/B01B1QU8JY?tag=tuequipaje09-21" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="../img/marcas/61tQIltcLuL._AC_SX569_.jpg" alt="Roncato Light maleta grande 75cm" loading="lazy" />
-      <span class="showcase-cell-label">Light · Grande</span>
-    </a>
-    <a href="https://www.amazon.es/dp/B089WFKGMY?tag=tuequipaje09-21" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="../img/marcas/61QZO3WO1yL._AC_SX569_.jpg" alt="Roncato Joy maleta mediana expansible" loading="lazy" />
-      <span class="showcase-cell-label">Joy · Mediana</span>
-    </a>
-  </div>
-
   <!-- BRAND HERO -->
   <section class="brand-hero">
-    <p class="brand-eyebrow">Marca · Hecho en Italia</p>
+    <p class="brand-eyebrow">Marca · Hecho en Italia desde 1950</p>
     <h1>Roncato</h1>
     <p>Desde Vigonza, Italia. Más de 70 años fabricando maletas que combinan ingeniería ligera con el estilo que solo sale de la bota de Europa.</p>
     <div class="brand-stats">
@@ -143,15 +129,51 @@
     </div>
   </section>
 
+  <!-- 4 LÍNEAS / CATEGORÍAS -->
+  <section class="categories-section">
+    <h2>Explorar por línea</h2>
+    <div class="categories-grid">
+
+      <a href="https://www.amazon.es/s?k=roncato+unica&tag=tuequipaje09-21" class="category-card" target="_blank" rel="noopener nofollow">
+        <div class="category-card-img unica">
+          <img src="../img/marcas/618Hvik8anL._AC_SL1500_.jpg" alt="Roncato Unica maleta italiana rígida" loading="lazy" onerror="this.parentElement.innerHTML='<span style=&quot;font-size:3.5rem&quot;>🧳</span>'" />
+        </div>
+        <span class="category-card-label">Unica</span>
+      </a>
+
+      <a href="https://www.amazon.es/s?k=roncato+r-lite&tag=tuequipaje09-21" class="category-card" target="_blank" rel="noopener nofollow">
+        <div class="category-card-img rlite">
+          <img src="../img/marcas/5184IXPAQ0L._AC_SX569_.jpg" alt="Roncato R-Lite maleta cabina ultraligera" loading="lazy" onerror="this.parentElement.innerHTML='<span style=&quot;font-size:3.5rem&quot;>✈️</span>'" />
+        </div>
+        <span class="category-card-label">R-Lite</span>
+      </a>
+
+      <a href="https://www.amazon.es/s?k=roncato+light+maleta&tag=tuequipaje09-21" class="category-card" target="_blank" rel="noopener nofollow">
+        <div class="category-card-img light">
+          <img src="../img/marcas/61tQIltcLuL._AC_SX569_.jpg" alt="Roncato Light maleta grande 75cm" loading="lazy" onerror="this.parentElement.innerHTML='<span style=&quot;font-size:3.5rem&quot;>🧳</span>'" />
+        </div>
+        <span class="category-card-label">Light</span>
+      </a>
+
+      <a href="https://www.amazon.es/s?k=roncato+joy+maleta&tag=tuequipaje09-21" class="category-card" target="_blank" rel="noopener nofollow">
+        <div class="category-card-img joy">
+          <img src="../img/marcas/61QZO3WO1yL._AC_SX569_.jpg" alt="Roncato Joy maleta mediana expansible" loading="lazy" onerror="this.parentElement.innerHTML='<span style=&quot;font-size:3.5rem&quot;>🧳</span>'" />
+        </div>
+        <span class="category-card-label">Joy</span>
+      </a>
+
+    </div>
+  </section>
+
   <!-- BRAND STORY -->
   <section class="brand-story">
     <h2>La maleta que nació en el Véneto</h2>
     <p>Roncato nació en 1950 en Vigonza, una pequeña localidad cerca de Padua, en el corazón del Véneto italiano. Lo que empezó como un taller artesanal de equipaje se convirtió con los años en una de las marcas de maletas más reconocidas de Europa, con distribución en más de 60 países. La familia Roncato lleva más de siete décadas aplicando el mismo principio: <strong>que una maleta italiana debe ser tan ligera como elegante, y tan duradera como hermosa</strong>.</p>
     <p>La gran apuesta tecnológica de Roncato ha sido siempre el <strong>policarbonato de alta resistencia</strong>. Sus maletas de la línea R-Lite pesan a veces menos de 2 kg en talla cabina, algo que marca una diferencia real cuando viajas con aerolíneas de bajo coste con límites de peso estrictos. No es solo marketing: el material aguanta caídas, presiones de bodega y el trato habitual de los aeropuertos sin deformarse ni agrietarse.</p>
-    <p>Roncato tiene algo que pocas marcas de su precio consiguen: <strong>presencia de marca sin necesidad de presumir</strong>. Sus maletas no llevan logos enormes ni diseños que griten. El trabajo está en los detalles — las ruedas dobles silenciosas, el forro interior de calidad, los divisores bien pensados — y en un acabado que a primera vista parece de precio mucho más alto. Para quien busca la elegancia italiana sin pagar el precio del lujo absoluto, Roncato es la respuesta obvia.</p>
+    <p>Roncato tiene algo que pocas marcas de su precio consiguen: <strong>presencia de marca sin necesidad de presumir</strong>. Sus maletas no llevan logos enormes ni diseños que griten. El trabajo está en los detalles — las ruedas dobles silenciosas, el forro interior de calidad, los divisores bien pensados — y en un acabado que a primera vista parece de precio mucho más alto.</p>
   </section>
 
-  <!-- PRODUCTOS -->
+  <!-- FEATURED PRODUCTS -->
   <section class="products-section">
     <h2>Selección destacada</h2>
     <div class="products-grid">
@@ -159,7 +181,7 @@
       <!-- Unica -->
       <article class="product-card">
         <div class="product-card-img bg-1">
-          <img src="../img/marcas/618Hvik8anL._AC_SL1500_.jpg" alt="Roncato Unica maleta italiana rígida policarbonato" loading="lazy" />
+          <img src="../img/marcas/618Hvik8anL._AC_SL1500_.jpg" alt="Roncato Unica maleta italiana rígida policarbonato" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML+='<span style=&quot;font-size:4rem&quot;>🧳</span>'" />
           <span class="product-badge">⭐ Más popular</span>
         </div>
         <div class="product-card-body">
@@ -168,59 +190,55 @@
           <p>El modelo estrella de Roncato. Carcasa de policarbonato ultraligero, cerradura TSA integrada, ruedas dobles silenciosas de 360° y un interior perfectamente organizado. Disponible en varios colores y tamaños.</p>
         </div>
         <div class="product-card-footer">
-          <div class="product-price"><span>desde</span>~149 €</div>
-          <a href="https://amzn.to/4dvEQq4" class="btn-amazon" target="_blank" rel="noopener nofollow">🛒 Ver en Amazon</a>
+          <a href="https://amzn.to/4dvEQq4" class="btn-amazon" target="_blank" rel="noopener nofollow">🛒 Ver precio en Amazon</a>
         </div>
       </article>
 
       <!-- R-Lite Cabina -->
       <article class="product-card">
         <div class="product-card-img bg-2">
-          <img src="../img/marcas/5184IXPAQ0L._AC_SX569_.jpg" alt="Roncato R-Lite cabina maleta ultraligera equipaje de mano" loading="lazy" />
-          <span class="product-badge">✈️ Equipaje de mano</span>
+          <img src="../img/marcas/5184IXPAQ0L._AC_SX569_.jpg" alt="Roncato R-Lite cabina ultraligera policarbonato" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML+='<span style=&quot;font-size:4rem&quot;>✈️</span>'" />
+          <span class="product-badge">✈️ Ultraligera</span>
         </div>
         <div class="product-card-body">
-          <span class="product-tag">R-Lite · Cabina · Ultraligera</span>
-          <h3>Roncato R-Lite — Cabina con menos de 2 kg</h3>
-          <p>La propuesta de Roncato para quien viaja solo con equipaje de mano. Diseñada para maximizar el volumen dentro de los límites de las aerolíneas europeas, con un peso propio que te deja margen real para meter lo que necesitas.</p>
+          <span class="product-tag">R-Lite · Cabina · Menos de 2 kg</span>
+          <h3>Roncato R-Lite — Cabina sin compromiso</h3>
+          <p>La maleta de cabina más ligera de la gama. Menos de 2 kg de peso, carcasa de policarbonato flexible y cerradura TSA. Perfecta para viajes cortos con aerolíneas de bajo coste.</p>
         </div>
         <div class="product-card-footer">
-          <div class="product-price"><span>desde</span>129 €</div>
-          <a href="https://www.amazon.es/dp/B0B7RY1G3W?tag=tuequipaje09-21" class="btn-amazon" target="_blank" rel="noopener nofollow">🛒 Ver en Amazon</a>
+          <a href="https://www.amazon.es/dp/B0B7RY1G3W?tag=tuequipaje09-21" class="btn-amazon" target="_blank" rel="noopener nofollow">🛒 Ver precio en Amazon</a>
         </div>
       </article>
 
       <!-- Light Grande -->
       <article class="product-card">
         <div class="product-card-img bg-3">
-          <img src="../img/marcas/61tQIltcLuL._AC_SX569_.jpg" alt="Roncato Light maleta grande 75cm viajes largos" loading="lazy" />
-          <span class="product-badge">🌍 Viajes largos</span>
+          <img src="../img/marcas/61tQIltcLuL._AC_SX569_.jpg" alt="Roncato Light maleta grande 75cm facturación" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML+='<span style=&quot;font-size:4rem&quot;>🧳</span>'" />
+          <span class="product-badge">📦 Gran capacidad</span>
         </div>
         <div class="product-card-body">
-          <span class="product-tag">Light · Grande · 75 cm</span>
-          <h3>Roncato Light — Para viajes largos sin cargar peso</h3>
-          <p>75 cm de alto para meter todo lo necesario en viajes de más de una semana. La línea Light mantiene el peso propio al mínimo gracias al policarbonato de nueva generación, con todo el espacio interior que puedas necesitar.</p>
+          <span class="product-tag">Light · 75 cm · Facturación</span>
+          <h3>Roncato Light — Viajes largos sin peso extra</h3>
+          <p>La solución para viajes largos. Formato grande (75 cm), carcasa rígida ultraligera y amplia capacidad interior. Incluye organizador y divisores para mantener el equipaje ordenado durante toda la aventura.</p>
         </div>
         <div class="product-card-footer">
-          <div class="product-price"><span>desde</span>139 €</div>
-          <a href="https://www.amazon.es/dp/B01B1QU8JY?tag=tuequipaje09-21" class="btn-amazon" target="_blank" rel="noopener nofollow">🛒 Ver en Amazon</a>
+          <a href="https://www.amazon.es/dp/B01B1QU8JY?tag=tuequipaje09-21" class="btn-amazon" target="_blank" rel="noopener nofollow">🛒 Ver precio en Amazon</a>
         </div>
       </article>
 
       <!-- Joy Mediana -->
       <article class="product-card">
         <div class="product-card-img bg-4">
-          <img src="../img/marcas/61QZO3WO1yL._AC_SX569_.jpg" alt="Roncato Joy maleta mediana expansible 70 litros" loading="lazy" />
-          <span class="product-badge">🔓 Expansible</span>
+          <img src="../img/marcas/61QZO3WO1yL._AC_SX569_.jpg" alt="Roncato Joy maleta mediana expansible precio" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML+='<span style=&quot;font-size:4rem&quot;>🧳</span>'" />
+          <span class="product-badge">💶 Mejor precio</span>
         </div>
         <div class="product-card-body">
-          <span class="product-tag">Joy · Mediana · 70/78 L expansible</span>
-          <h3>Roncato Joy — La mediana que crece cuando la necesitas</h3>
-          <p>70 litros que se amplían a 78 cuando necesitas volver con más de lo que llevaste. Tamaño ideal para una semana, medidas perfectas para facturar sin sobrecargos, y el acabado italiano de siempre.</p>
+          <span class="product-tag">Joy · Mediana · Expansible</span>
+          <h3>Roncato Joy — La entrada a la calidad italiana</h3>
+          <p>La opción más accesible de la gama sin renunciar a la calidad italiana. Maleta mediana expansible, ruedas de 360° y cerradura con combinación. El mejor punto de entrada al mundo Roncato.</p>
         </div>
         <div class="product-card-footer">
-          <div class="product-price"><span>desde</span>127 €</div>
-          <a href="https://www.amazon.es/dp/B089WFKGMY?tag=tuequipaje09-21" class="btn-amazon" target="_blank" rel="noopener nofollow">🛒 Ver en Amazon</a>
+          <a href="https://www.amazon.es/dp/B089WFKGMY?tag=tuequipaje09-21" class="btn-amazon" target="_blank" rel="noopener nofollow">🛒 Ver precio en Amazon</a>
         </div>
       </article>
 

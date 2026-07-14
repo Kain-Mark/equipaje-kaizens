@@ -38,6 +38,12 @@ IMAGES = [
     "https://m.media-amazon.com/images/I/81fOUr20J+L._AC_SX569_.jpg",
     "https://m.media-amazon.com/images/P/B09VT147V5.01._SL500_.jpg",
     "https://m.media-amazon.com/images/P/B0DG5XMR67.01._SL500_.jpg",
+    # Samsonite
+    "https://m.media-amazon.com/images/I/51OnuWC--2L._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/61f9ahfCMNL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/61mGqeUSVQL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/81YU1nUmWXL._AC_SL1500_.jpg",
+    "https://m.media-amazon.com/images/I/61sVJ+rggkL._AC_SL1500_.jpg",
 ]
 
 headers = {
