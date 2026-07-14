@@ -418,10 +418,28 @@ nav a.blog-nav {
 .f-raleway  { font-family: 'Raleway', sans-serif; font-weight: 600; letter-spacing: 0.08em; }
 
 @media (max-width: 768px) {
-  .brand-pairs { grid-template-columns: repeat(2, 1fr); }
+  .brand-pairs {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    overflow: visible;
+    margin-bottom: 8px;
+  }
   .brand-pairs--b { grid-template-columns: repeat(2, 1fr); }
-  .brand-pair:nth-child(2n) { border-right: none; }
-  .brand-pair { border-bottom: 1px solid #e8e8e8; }
+  .brand-pair {
+    border-right: none;
+    border-bottom: none;
+    border: 1px solid #e8e8e8;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #fafafa;
+  }
+  .brand-pair:nth-child(2n) { border-right: 1px solid #e8e8e8; }
+  .brand-name { background: #fafafa; }
+  .brand-name:hover { transform: none; background: #f0f0f0; }
+  .bp-line { background: #e8e8e8; }
 }
 
 @media (max-width: 480px) {
