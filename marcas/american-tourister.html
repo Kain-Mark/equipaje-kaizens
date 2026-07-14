@@ -11,13 +11,13 @@
   </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>American Tourister — Maletas económicas de calidad | EquipajeKaizens.com</title>
-  <meta name="description" content="Guía de maletas American Tourister: la marca del grupo Samsonite con mejor relación calidad-precio. Análisis honesto y precios reales en Amazon España." />
+  <title>American Tourister — Maletas, mochilas y equipaje infantil 2026 | EquipajeKaizens</title>
+  <meta name="description" content="Toda la gama American Tourister en Amazon España. Maletas rígidas, equipaje de mano, mochilas y colecciones Disney para niños. Análisis honesto y mejores precios." />
   <link rel="canonical" href="https://kain-mark.github.io/equipaje-kaizens/marcas/american-tourister.html" />
   <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧳</text></svg>" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800&family=Playfair+Display:ital,wght@0,700;1,400&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@700;800&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
   <style>
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body { font-family: 'Inter', system-ui, sans-serif; background: #fff; color: #1a1a1a; line-height: 1.6; }
@@ -32,82 +32,79 @@
     .back-link { font-size: 0.85rem; color: #888; text-decoration: none; transition: color 0.2s; }
     .back-link:hover { color: #111; }
 
-    /* SHOWCASE */
-    .brand-showcase { display: grid; grid-template-columns: repeat(4, 1fr); height: 420px; }
-    .showcase-cell { position: relative; overflow: hidden; display: flex; align-items: flex-end; justify-content: center; padding-bottom: 32px; cursor: pointer; transition: filter 0.3s; text-decoration: none; }
-    .showcase-cell:hover { filter: brightness(0.95); }
-    .showcase-cell:nth-child(1) { background: #f0edea; }
-    .showcase-cell:nth-child(2) { background: #e8ede9; }
-    .showcase-cell:nth-child(3) { background: #e4e8ee; }
-    .showcase-cell:nth-child(4) { background: #f4ede8; }
-    .showcase-cell img { position: absolute; top: 0; left: 0; width: 100%; height: 100%; object-fit: contain; padding: 24px; transition: transform 0.4s ease; }
-    .showcase-cell:hover img { transform: scale(1.04); }
-    .showcase-cell-label { position: relative; z-index: 2; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(0,0,0,0.45); background: rgba(255,255,255,0.7); padding: 5px 12px; border-radius: 20px; backdrop-filter: blur(4px); }
+    /* BRAND HERO */
+    .brand-hero { background: linear-gradient(135deg, #b71c1c 0%, #7f0000 50%, #3a0000 100%); padding: 70px 40px 60px; text-align: center; color: #fff; }
+    .brand-eyebrow { font-size: 0.75rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(255,255,255,0.5); margin-bottom: 16px; }
+    .brand-hero h1 { font-family: 'Exo 2', system-ui, sans-serif; font-size: clamp(2.2rem, 5vw, 3.8rem); font-weight: 800; letter-spacing: -0.03em; margin-bottom: 16px; }
+    .brand-hero p { font-size: 1rem; color: rgba(255,255,255,0.7); max-width: 520px; margin: 0 auto 40px; line-height: 1.8; }
+    .brand-stats { display: flex; justify-content: center; gap: 48px; flex-wrap: wrap; }
+    .brand-stat strong { display: block; font-size: 2.2rem; font-weight: 800; font-family: 'Exo 2', system-ui, sans-serif; line-height: 1; margin-bottom: 4px; }
+    .brand-stat span { font-size: 0.72rem; letter-spacing: 0.1em; text-transform: uppercase; color: rgba(255,255,255,0.45); }
 
-    /* PRÓXIMAMENTE HERO */
-    .prox-hero { background: radial-gradient(ellipse 80% 120% at 50% 50%, #152b47 0%, #0b1928 55%, #091422 100%); color: white; padding: 100px 40px; text-align: center; }
-    .prox-hero .brand-eyebrow { font-size: 0.8rem; letter-spacing: 0.18em; text-transform: uppercase; color: #5ec8f5; margin-bottom: 20px; }
-    .prox-hero h1 { font-size: 3.5rem; font-weight: 800; font-family: 'Exo 2', system-ui, sans-serif; letter-spacing: -0.03em; margin-bottom: 20px; }
-    .prox-hero p { font-size: 1.05rem; color: rgba(255,255,255,0.65); max-width: 520px; margin: 0 auto 40px; line-height: 1.75; }
-    .prox-badge { display: inline-block; background: rgba(94,200,245,0.15); border: 1px solid rgba(94,200,245,0.35); color: #5ec8f5; font-size: 0.78rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 10px 24px; border-radius: 40px; margin-bottom: 40px; }
-    .prox-notify { display: inline-flex; align-items: center; gap: 10px; background: white; color: #0b1928; font-size: 0.88rem; font-weight: 600; padding: 14px 28px; border-radius: 8px; text-decoration: none; transition: opacity 0.2s; }
-    .prox-notify:hover { opacity: 0.88; }
+    /* CATEGORIES SECTION */
+    .categories-section { max-width: 1100px; margin: 0 auto; padding: 56px 40px 24px; }
+    .categories-section h2 { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #bbb; margin-bottom: 24px; }
+    .categories-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 16px; }
+    .category-card { display: flex; flex-direction: column; align-items: center; text-decoration: none; border: 1px solid #ebebeb; border-radius: 14px; overflow: hidden; transition: box-shadow 0.25s, transform 0.25s; }
+    .category-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.08); transform: translateY(-3px); }
+    .category-card-img { width: 100%; height: 180px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .category-card-img img { width: 100%; height: 100%; object-fit: contain; padding: 16px; transition: transform 0.3s; }
+    .category-card:hover .category-card-img img { transform: scale(1.05); }
+    .category-card-img.equipaje { background: #f0f0f0; }
+    .category-card-img.mano { background: #e8e8e8; }
+    .category-card-img.mochilas { background: #e4edf5; }
+    .category-card-img.ninos { background: #fceef5; }
+    .category-card-img.emoji-bg { font-size: 4rem; }
+    .category-card-label { padding: 14px 16px; font-size: 0.88rem; font-weight: 600; color: #111; width: 100%; text-align: center; border-top: 1px solid #f0f0f0; }
 
-    /* BRAND INTRO */
-    .brand-intro { display: flex; align-items: flex-end; justify-content: space-between; gap: 32px; padding: 52px 40px 40px; border-bottom: 1px solid #ebebeb; max-width: 1200px; margin: 0 auto; }
-    .brand-intro-text h1 { font-size: 2.6rem; font-weight: 700; letter-spacing: -0.03em; color: #111; margin-bottom: 10px; }
-    .brand-intro-text p { font-size: 0.97rem; color: #666; max-width: 520px; line-height: 1.75; }
-    .brand-since { text-align: right; flex-shrink: 0; }
-    .brand-since span { display: block; font-size: 0.72rem; letter-spacing: 0.12em; text-transform: uppercase; color: #aaa; margin-bottom: 4px; }
-    .brand-since strong { font-size: 2rem; font-weight: 700; color: #e63946; }
+    /* BRAND STORY */
+    .brand-story { max-width: 860px; margin: 0 auto; padding: 52px 40px 48px; border-bottom: 1px solid #f0f0f0; }
+    .brand-story h2 { font-size: 1.5rem; font-weight: 700; color: #111; margin-bottom: 18px; letter-spacing: -0.02em; }
+    .brand-story p { font-size: 0.97rem; color: #555; line-height: 1.85; margin-bottom: 18px; }
+    .brand-story p:last-child { margin-bottom: 0; }
+    .brand-story strong { color: #111; }
 
-    /* PRODUCTS */
-    .products-section { max-width: 1200px; margin: 0 auto; padding: 56px 40px 80px; }
-    .products-section h2 { font-size: 1.1rem; font-weight: 600; letter-spacing: 0.08em; text-transform: uppercase; color: #aaa; margin-bottom: 32px; }
-    .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 24px; }
-    .product-card { border: 1px solid #ebebeb; border-radius: 14px; overflow: hidden; transition: box-shadow 0.25s, transform 0.25s; }
+    /* PRODUCTS SECTION */
+    .products-section { max-width: 1100px; margin: 0 auto; padding: 52px 40px 80px; }
+    .products-section h2 { font-size: 0.78rem; font-weight: 600; letter-spacing: 0.14em; text-transform: uppercase; color: #bbb; margin-bottom: 28px; }
+    .products-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(260px, 1fr)); gap: 24px; }
+    .product-card { border: 1px solid #ebebeb; border-radius: 14px; overflow: hidden; transition: box-shadow 0.25s, transform 0.25s; display: flex; flex-direction: column; }
     .product-card:hover { box-shadow: 0 10px 30px rgba(0,0,0,0.08); transform: translateY(-4px); }
-    .product-card-img { background: #f7f8fa; height: 220px; display: flex; align-items: center; justify-content: center; overflow: hidden; }
+    .product-card-img { height: 220px; display: flex; align-items: center; justify-content: center; overflow: hidden; position: relative; }
     .product-card-img img { width: 100%; height: 100%; object-fit: contain; padding: 20px; }
-    .product-card-body { padding: 22px; }
-    .product-card-body .tag { font-size: 0.7rem; font-weight: 600; letter-spacing: 0.1em; text-transform: uppercase; color: #e63946; margin-bottom: 8px; }
-    .product-card-body h3 { font-size: 1rem; font-weight: 700; color: #111; margin-bottom: 8px; line-height: 1.35; }
-    .product-card-body p { font-size: 0.88rem; color: #777; line-height: 1.65; margin-bottom: 18px; }
-    .product-card-footer { display: flex; align-items: center; justify-content: space-between; padding: 0 22px 20px; }
-    .product-price { font-size: 1rem; font-weight: 700; color: #111; }
-    .product-price span { font-size: 0.75rem; font-weight: 400; color: #aaa; margin-right: 3px; }
-    .btn-amazon-clean { font-size: 0.82rem; font-weight: 600; color: #111; text-decoration: none; border-bottom: 1.5px solid #111; padding-bottom: 2px; transition: color 0.2s, border-color 0.2s; }
-    .btn-amazon-clean:hover { color: #e63946; border-color: #e63946; }
-
-    /* PROX INFO SECTION */
-    .prox-info { max-width: 760px; margin: 0 auto; padding: 72px 40px 80px; text-align: center; }
-    .prox-info h2 { font-size: 1.6rem; font-weight: 700; color: #111; margin-bottom: 16px; }
-    .prox-info p { font-size: 0.97rem; color: #666; line-height: 1.8; margin-bottom: 24px; }
-    .prox-facts { display: flex; justify-content: center; gap: 40px; margin-top: 48px; flex-wrap: wrap; }
-    .prox-fact { text-align: center; }
-    .prox-fact strong { display: block; font-size: 2rem; font-weight: 800; font-family: 'Exo 2', system-ui, sans-serif; color: #0b1928; line-height: 1; margin-bottom: 6px; }
-    .prox-fact span { font-size: 0.78rem; letter-spacing: 0.1em; text-transform: uppercase; color: #aaa; }
+    .product-card-img.bg-light { background: #f7f8fa; }
+    .product-card-img.bg-blue { background: #eaf2fa; }
+    .product-card-img.bg-pink { background: #fceef5; }
+    .product-card-img.emoji-card { font-size: 4.5rem; background: #f7f8fa; }
+    .product-badge { position: absolute; top: 12px; left: 12px; font-size: 0.68rem; font-weight: 700; letter-spacing: 0.06em; text-transform: uppercase; padding: 5px 10px; border-radius: 20px; background: #b71c1c; color: #fff; }
+    .product-card-body { padding: 20px 22px 12px; flex: 1; }
+    .product-tag { font-size: 0.7rem; font-weight: 700; letter-spacing: 0.12em; text-transform: uppercase; color: #b71c1c; display: block; margin-bottom: 6px; }
+    .product-card-body h3 { font-size: 0.97rem; font-weight: 700; color: #111; margin-bottom: 8px; line-height: 1.35; }
+    .product-card-body p { font-size: 0.85rem; color: #777; line-height: 1.65; }
+    .product-card-footer { padding: 14px 22px 18px; border-top: 1px solid #f0f0f0; margin-top: auto; }
+    .btn-amazon { display: inline-block; background: #ff9900; color: #111; font-size: 0.82rem; font-weight: 700; padding: 10px 18px; border-radius: 8px; text-decoration: none; width: 100%; text-align: center; transition: background 0.2s; }
+    .btn-amazon:hover { background: #e68a00; }
+    .btn-search { display: inline-block; background: #f0f0f0; color: #333; font-size: 0.82rem; font-weight: 600; padding: 10px 18px; border-radius: 8px; text-decoration: none; width: 100%; text-align: center; transition: background 0.2s; }
+    .btn-search:hover { background: #e0e0e0; }
 
     /* FOOTER */
     .page-footer { text-align: center; padding: 32px 20px; border-top: 1px solid #ebebeb; font-size: 0.78rem; color: #bbb; }
+    .page-footer a { color: #bbb; text-decoration: none; }
 
     @media (max-width: 900px) {
-      .brand-showcase { height: 280px; }
-      .brand-intro { flex-direction: column; align-items: flex-start; padding: 36px 24px 28px; }
-      .brand-since { text-align: left; }
-      .products-section { padding: 36px 24px 60px; }
-      .prox-hero { padding: 60px 24px; }
-      .prox-hero h1 { font-size: 2.4rem; }
+      .categories-grid { grid-template-columns: repeat(2, 1fr); }
+      .brand-hero { padding: 50px 24px 44px; }
+      .categories-section, .products-section, .brand-story { padding-left: 24px; padding-right: 24px; }
     }
     @media (max-width: 600px) {
       .site-header { padding: 16px 20px; }
-      .brand-showcase { grid-template-columns: repeat(2, 1fr); height: 320px; }
-      .products-grid { grid-template-columns: 1fr; }
-      .prox-facts { gap: 24px; }
+      .brand-stats { gap: 28px; }
+      .brand-stat strong { font-size: 1.8rem; }
     }
   </style>
 </head>
 <body>
+
   <header class="site-header">
     <a href="../index.html" class="logo">
       <svg class="logo-backpack" viewBox="0 0 40 46" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
@@ -122,51 +119,136 @@
     </a>
     <a href="../index.html" class="back-link">← Todas las marcas</a>
   </header>
-  <div class="brand-showcase">
-    <a href="https://amzn.to/4c8WxsY" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="https://m.media-amazon.com/images/I/71+BQTJoTEL._AC_SL1500_.jpg" alt="American Tourister Dashpop maleta" />
-      <span class="showcase-cell-label">Dashpop · Grande</span>
-    </a>
-    <a href="https://amzn.to/4c8WxsY" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="https://m.media-amazon.com/images/I/71+BQTJoTEL._AC_SL1500_.jpg" alt="American Tourister Dashpop mediana" />
-      <span class="showcase-cell-label">Dashpop · Mediana</span>
-    </a>
-    <a href="https://amzn.to/4c8WxsY" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="https://m.media-amazon.com/images/I/71+BQTJoTEL._AC_SL1500_.jpg" alt="American Tourister Dashpop cabina" />
-      <span class="showcase-cell-label">Dashpop · Cabina</span>
-    </a>
-    <a href="https://amzn.to/4c8WxsY" target="_blank" rel="noopener nofollow" class="showcase-cell">
-      <img src="https://m.media-amazon.com/images/I/71+BQTJoTEL._AC_SL1500_.jpg" alt="American Tourister colores" />
-      <span class="showcase-cell-label">Varios colores</span>
-    </a>
-  </div>
-  <div class="brand-intro">
-    <div class="brand-intro-text">
-      <h1>American Tourister</h1>
-      <p>La apuesta inteligente del grupo Samsonite. Desde 1933 fabricando maletas accesibles sin renunciar a la calidad. Carcasa dura, colores divertidos y la fiabilidad de una familia con más de 90 años de historia en el equipaje.</p>
+
+  <!-- BRAND HERO -->
+  <section class="brand-hero">
+    <p class="brand-eyebrow">Marca · Grupo Samsonite</p>
+    <h1>American Tourister</h1>
+    <p>La marca del grupo Samsonite con mejor relación calidad-precio. Maletas con carácter, diseños atrevidos y la fiabilidad de una firma con más de 90 años en el mundo del equipaje.</p>
+    <div class="brand-stats">
+      <div class="brand-stat"><strong>1933</strong><span>Fundación</span></div>
+      <div class="brand-stat"><strong>+90</strong><span>Años de historia</span></div>
+      <div class="brand-stat"><strong>100+</strong><span>Países</span></div>
     </div>
-    <div class="brand-since"><span>Fundada en</span><strong>1933</strong></div>
-  </div>  <div class="products-section">
-    <h2>Selección EquipajeKaizens</h2>
+  </section>
+
+  <!-- 4 CATEGORY CARDS -->
+  <section class="categories-section">
+    <h2>Comprar por categoría</h2>
+    <div class="categories-grid">
+
+      <a href="https://www.amazon.es/s?k=american+tourister+maleta&tag=tuequipaje09-21" class="category-card" target="_blank" rel="noopener nofollow">
+        <div class="category-card-img equipaje">
+          <img src="https://m.media-amazon.com/images/P/B0DG5XMR67.01._SL500_.jpg" alt="American Tourister maletas de viaje" loading="lazy" onerror="this.parentElement.innerHTML='<span style=&quot;font-size:3.5rem&quot;>🧳</span>'" />
+        </div>
+        <span class="category-card-label">Equipaje</span>
+      </a>
+
+      <a href="https://www.amazon.es/s?k=american+tourister+equipaje+mano+cabina&tag=tuequipaje09-21" class="category-card" target="_blank" rel="noopener nofollow">
+        <div class="category-card-img mano">
+          <img src="https://m.media-amazon.com/images/P/B09VT147V5.01._SL500_.jpg" alt="American Tourister equipaje de mano cabina" loading="lazy" onerror="this.parentElement.innerHTML='<span style=&quot;font-size:3.5rem&quot;>🎒</span>'" />
+        </div>
+        <span class="category-card-label">Equipaje de mano</span>
+      </a>
+
+      <a href="https://www.amazon.es/s?k=american+tourister+mochila&tag=tuequipaje09-21" class="category-card" target="_blank" rel="noopener nofollow">
+        <div class="category-card-img mochilas emoji-bg">
+          <span>💼</span>
+        </div>
+        <span class="category-card-label">Mochilas y bolso</span>
+      </a>
+
+      <a href="https://www.amazon.es/s?k=american+tourister+niños+disney&tag=tuequipaje09-21" class="category-card" target="_blank" rel="noopener nofollow">
+        <div class="category-card-img ninos emoji-bg">
+          <span>🌈</span>
+        </div>
+        <span class="category-card-label">Niños</span>
+      </a>
+
+    </div>
+  </section>
+
+  <!-- BRAND STORY -->
+  <section class="brand-story">
+    <h2>¿Por qué elegir American Tourister?</h2>
+    <p>American Tourister nació en 1933 en Providence, Rhode Island, con una idea clara: hacer que viajar bien equipado estuviera al alcance de todos. Décadas después, la marca forma parte del <strong>grupo Samsonite</strong> — el mayor fabricante de equipaje del mundo — lo que le permite mantener la calidad de sus materiales sin disparar los precios.</p>
+    <p>Lo que distingue a American Tourister es su <strong>combinación de resistencia y personalidad</strong>. Sus maletas de carcasa dura soportan el trato que da cualquier aeropuerto — cintas transportadoras, bodegas, humedad — y lo hacen con colores y diseños que se salen de lo convencional. Desde la gama clásica en negro hasta las colecciones Disney para los más pequeños, siempre hay una American Tourister para cada tipo de viajero.</p>
+    <p>Si buscas tu primera maleta seria, o quieres renovar tu equipaje sin gastar lo que costaría una Samsonite o una Rimowa, American Tourister es probablemente la respuesta más inteligente del mercado.</p>
+  </section>
+
+  <!-- FEATURED PRODUCTS -->
+  <section class="products-section">
+    <h2>Selección destacada</h2>
     <div class="products-grid">
+
+      <!-- Breakruptor -->
       <article class="product-card">
-        <div class="product-card-img">
-          <img src="https://m.media-amazon.com/images/I/71+BQTJoTEL._AC_SL1500_.jpg" alt="American Tourister Dashpop maleta económica" loading="lazy" />
+        <div class="product-card-img bg-light">
+          <img src="https://m.media-amazon.com/images/P/B0DG5XMR67.01._SL500_.jpg" alt="American Tourister Breakruptor maleta rígida multicolor ondas" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML+='<span style=&quot;font-size:4rem&quot;>🧳</span>'" />
+          <span class="product-badge">🎨 Diseño exclusivo</span>
         </div>
         <div class="product-card-body">
-          <p class="tag">Maleta rígida · Relación calidad-precio</p>
-          <h3>American Tourister Dashpop — La más económica fiable</h3>
-          <p>Filial del grupo Samsonite a precio asequible. Carcasa dura de policarbonato, ruedas silenciosas y cierre con combinación integrado. Perfecta para empezar a viajar sin gastar demasiado.</p>
+          <span class="product-tag">Maleta rígida · Diseño vibrante</span>
+          <h3>American Tourister Breakruptor</h3>
+          <p>Carcasa rígida con diseño de ondas multicolor. 4 ruedas dobles silenciosas, cerradura TSA integrada y acabados que hacen que tu maleta sea imposible de confundir en la cinta del aeropuerto.</p>
         </div>
         <div class="product-card-footer">
-          <div class="product-price"><span>desde</span>~79 €</div>
-          <a href="https://amzn.to/4c8WxsY" class="btn-amazon-clean" target="_blank" rel="noopener nofollow">Ver en Amazon →</a>
+          <a href="https://www.amazon.es/dp/B0DG5XMR67?tag=tuequipaje09-21" class="btn-amazon" target="_blank" rel="noopener nofollow">🛒 Ver precio en Amazon</a>
         </div>
       </article>
+
+      <!-- Urban Track -->
+      <article class="product-card">
+        <div class="product-card-img bg-light">
+          <img src="https://m.media-amazon.com/images/P/B09VT147V5.01._SL500_.jpg" alt="American Tourister Urban Track maleta cabina con ruedas" loading="lazy" onerror="this.style.display='none'; this.parentElement.innerHTML+='<span style=&quot;font-size:4rem&quot;>🧳</span>'" />
+          <span class="product-badge">✈️ Equipaje de mano</span>
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag">Equipaje de mano · Cabina</span>
+          <h3>American Tourister Urban Track</h3>
+          <p>Trolley ligero diseñado para el equipaje de cabina. Cumple con las normativas de las principales aerolíneas europeas. 4 ruedas multidireccionales, cerradura TSA y diseño urbano compacto.</p>
+        </div>
+        <div class="product-card-footer">
+          <a href="https://www.amazon.es/dp/B09VT147V5?tag=tuequipaje09-21" class="btn-amazon" target="_blank" rel="noopener nofollow">🛒 Ver precio en Amazon</a>
+        </div>
+      </article>
+
+      <!-- Mochilas (categoría) -->
+      <article class="product-card">
+        <div class="product-card-img bg-blue emoji-card">
+          💼
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag">Mochilas y bolsos · Todas las tallas</span>
+          <h3>Mochilas American Tourister</h3>
+          <p>Desde mochilas para portátil hasta bolsos de viaje ligeros. La gama AT combina funcionalidad y resistencia con los colores y diseños característicos de la marca.</p>
+        </div>
+        <div class="product-card-footer">
+          <a href="https://www.amazon.es/s?k=american+tourister+mochila&tag=tuequipaje09-21" class="btn-search" target="_blank" rel="noopener nofollow">Ver mochilas en Amazon →</a>
+        </div>
+      </article>
+
+      <!-- Niños (categoría) -->
+      <article class="product-card">
+        <div class="product-card-img bg-pink emoji-card">
+          🌈
+        </div>
+        <div class="product-card-body">
+          <span class="product-tag">Niños · Disney, Marvel y más</span>
+          <h3>Maletas infantiles AT</h3>
+          <p>Colecciones Disney, Marvel y Star Wars. Maletas ligeras con diseños que los niños adoran — y que son suficientemente resistentes para durar varios años de viajes en familia.</p>
+        </div>
+        <div class="product-card-footer">
+          <a href="https://www.amazon.es/s?k=american+tourister+niños+disney&tag=tuequipaje09-21" class="btn-search" target="_blank" rel="noopener nofollow">Ver colección infantil →</a>
+        </div>
+      </article>
+
     </div>
-  </div>
+  </section>
+
   <footer class="page-footer">
-    <p>© 2026 EquipajeKaizens.com · Como asociado de Amazon, obtenemos comisiones por compras que califican.</p>
+    <p>© 2026 EquipajeKaizens.com · <a href="../index.html">Inicio</a> · Como asociado de Amazon, obtenemos comisiones por compras que califican.</p>
   </footer>
+
 </body>
 </html>
