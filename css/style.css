@@ -437,9 +437,14 @@ nav a.blog-nav {
     background: #fafafa;
   }
   .brand-pair:nth-child(2n) { border-right: 1px solid #e8e8e8; }
-  .brand-name { background: #fafafa; }
+  .brand-name {
+    background: #fafafa;
+    padding: 18px 12px;
+    font-size: clamp(0.78rem, 3.5vw, 0.95rem);
+  }
   .brand-name:hover { transform: none; background: #f0f0f0; }
-  .bp-line { background: #e8e8e8; }
+  .bp-line { display: none; }
+  .brand-eco-sub { padding: 18px 12px; font-size: 0.72rem; }
 }
 
 @media (max-width: 480px) {
